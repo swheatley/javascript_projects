@@ -5,9 +5,15 @@
   <title>Modern</title>
 </head>
 <body>
-  <h2>Welcome to the Modern page.  Everything is up to date!</h2>
+  <h2>Welcome to the Modern page.</h2>
 
 
-  <script src="geolocation.js"></script>
+  <script>
+    if(!navigator.gelocation){
+      console.log("modern");
+      document.location.replace("legacy.html");
+      // have to include the document object
+    }
+  </script>
 </body>
 </html>

@@ -6,9 +6,15 @@
 
 </head>
 <body>
-  <h2> Welcome to the Legacy page.  You need to upgrade!</h2>
+  <h2> Welcome to the Legacy page.</h2>
 
 
-  <script src="geolocation.js"></script>
+  <script>
+
+    if(navigator.geolocation){
+      console.log("legacy");
+      document.location.replace("modern.html");
+    }
+  </script>
 </body>
 </html>
