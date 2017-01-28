@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Images</title>
+</head>
+<body>
+  <img src=" " width="200" height="150" alt="My Image"/>
+
+  <script>
+    var myImages = [
+      "images/smiley.png ",
+      "images/fun.jpeg",
+      "images/mario.jpg ",
+
+    ]
+    var imageIndex = Math.floor(Math.random() * 3);
+    console.log(imageIndex);
+
+    document.images[0].src = myImages[imageIndex];
+  </script>
+</body>
+</html>
